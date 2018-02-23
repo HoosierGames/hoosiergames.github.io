@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hoosier Games</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./hg-common.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var showMoreJams = false;
+        function toggleMoreJams() {
+            showMoreJams = !showMoreJams;
+            if (showMoreJams) { $('#MoreJams').slideDown(); } else { $('#MoreJams').slideUp(); }
+        }
+    </script>
+</head>
+<body>
+    <div class="top">
+        <a href="./" class="title-link">
+            <div class="site-title">
+                <div class="logo"></div>
+                <div class="text no-select">
+                    Hoosier&nbsp;<span class="big-text">Games</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="nav all-smooth">
+        <div class="nav-main">
+            <a href="./"><div class="no-select nav-item">home</div></a>
+            <a href="./events"><div class="no-select nav-item">events</div></a>
+            <a href="./about"><div class="no-select nav-item">about</div></a>
+            <a href="./projects"><div class="no-select nav-item active">projects</div></a>
+            <a href="./contact"><div class="no-select nav-item">contact</div></a>
+        </div>
+
+        <!-- <input type="checkbox" name="sign-in-visibility" id="sign-in-visibility" class="hidden" />
+        <label for="sign-in-visibility" class="nav-item sign-in no-select">sign&nbsp;in</label>
+        <div class="dropdown no-select">
+            <div class="title no-select">Sign In</div>
+            <div class="dropdown-main">
+                <div class="input-line no-select"><span class="input-label">username:</span><input type="text" value="Hello" /></div>
+                <div class="input-line no-select"><span class="input-label">password:</span><input type="password" value="Hello" /></div>
+                <input class="input-submit no-select" type="submit" value="sign in" />
+            </div>
+        </div> -->
+    </div>
+
+    <div class="middle">
+        <div class="title">
+            <div class="text no-select">Featured!</div>
+        </div>
+        <div class="content card-column">
+
+            <div class="card flex">
+                <div class="card-text">
+                    <strong class="big-text">Slug Slasher</strong> is a 2D action platformer where
+                    the player takes on the role of a chef who must defend the world from an
+                    onslaught of giant slugs with only his trusty bucket of salt.
+                    <br /><br />
+                    The game is currently in development and can be found at <a href="http://slugslasher.com" target="_blank">slugslasher.com</a>
+                    <br /><br />
+                    <a href="./post?slugslasher"><em>read more...</em></a>
+                </div>
+                <a class="card-img right" href="http://slugslasher.com" target="_blank" style="background-image:url(img/SlugSlasher-Short.png)"></a>
+            </div>
+            <div class="card flex">
+                <a class="card-img left" href="https://kertisjones.itch.io/one-run-dungeon" target="_blank" style="background-image:url(img/OneRunDungeon-Square.jpg)"></a>
+                <div class="card-text">
+                    <strong class="big-text">One Run Dungeon</strong> is an arcade&minus;style side-scroller with one goal:
+                    beat the game in one run. Armed with just your spellbook and staff, you must defeat
+                    countless hordes sent by the dungeon's master.
+                    <br /><br />
+                    The game is available on <a href="https://kertisjones.itch.io/one-run-dungeon" target="_blank">Itch.io</a> now!
+                    <br /><br />
+                    <a href="./post?onerundungeon"><em>read more...</em></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <div class="text no-select">Game Jams</div>
+        </div>
+        <div class="content">
+            <strong class="big-text">Hoosier Games</strong> kicks off each semester with a two hour long game jam where participants
+            aim to make a game from a randomly generated title in teams of four to six people of different roles.
+            Check out a few games from various jams below!
+        </div>
+        <div class="content">
+            <div class="card-column double">
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/DJDICL.png')"></div>
+                    <strong>Def Jam Disco in Crazyland</strong><br />
+                    Spring 2018
+                </div>
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/DFH.png')"></div>
+                    <strong>Deranged Fishing Hoedown</strong><br />
+                    Spring 2018
+                </div>
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/EMTITMK.png')"></div>
+                    <strong>Elite Monster Truck in the Magic Kingdom</strong><br />
+                    Spring 2018
+                </div>
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/UVNL.png')"></div>
+                    <strong>Ultra Violent Nuclear Lord</strong><br />
+                    Fall 2017
+                </div>
+            </div>
+            <!-- Extra jam games -->
+            <div class="card-column double" style="display: none;" id="MoreJams">
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/SCT.png')"></div>
+                    <strong>Soviet Cardboard Trainer</strong><br />
+                    Spring 2017
+                </div>
+                <div class="card align-center">
+                    <div class="img wide short" style="background-image:url('posts/img/RSD.png')"></div>
+                    <strong>Rad Surf Demolition</strong><br />
+                    Fall 2016
+                </div>
+            </div>
+            <input type="checkbox" id="ToggleExpand" class="expand-toggle hidden" />
+            <label for="ToggleExpand" class="expand-button" onclick="toggleMoreJams()"><span class="cross"></span></label>
+        </div>
+    </div>
+    <div class="bottom">
+        <!-- Website by Rajin Shankar, 2018 -->
+    </div>
+</body>
+</html>

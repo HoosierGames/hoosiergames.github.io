@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hoosier Games</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./hg-common.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" href="./img/HG-Icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var showMoreEvents = false;
+        function toggleMoreEvents() {
+            showMoreEvents = !showMoreEvents;
+            if (showMoreEvents) { $('#MoreEvents').slideDown(); } else { $('#MoreEvents').slideUp(); }
+        }
+    </script>
+</head>
+<body>
+    <div class="top">
+        <a href="./" class="title-link">
+            <div class="site-title">
+                <div class="logo"></div>
+                <div class="text no-select">
+                    Hoosier&nbsp;<span class="big-text">Games</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="nav all-smooth">
+        <div class="nav-main">
+            <a href="./"><div class="no-select nav-item">home</div></a>
+            <a href="./events"><div class="no-select nav-item active">events</div></a>
+            <a href="./about"><div class="no-select nav-item">about</div></a>
+            <a href="./projects"><div class="no-select nav-item">projects</div></a>
+            <a href="./contact"><div class="no-select nav-item">contact</div></a>
+        </div>
+
+        <!-- <input type="checkbox" name="sign-in-visibility" id="sign-in-visibility" class="hidden" />
+        <label for="sign-in-visibility" class="nav-item sign-in no-select">sign&nbsp;in</label>
+        <div class="dropdown no-select">
+            <div class="title no-select">Sign In</div>
+            <div class="dropdown-main">
+                <div class="input-line no-select"><span class="input-label">username:</span><input type="text" value="Hello" /></div>
+                <div class="input-line no-select"><span class="input-label">password:</span><input type="password" value="Hello" /></div>
+                <input class="input-submit no-select" type="submit" value="sign in" />
+            </div>
+        </div> -->
+    </div>
+
+    <div class="middle">
+        <div class="title">
+            <div class="text no-select">Events</div>
+        </div>
+        <div class="content">
+            <div class="card-column">
+                <!--Event Start-->
+                <div class="card">
+                    <div class="card-title">
+                        Mid-Semester Standups
+                    </div>
+                    <div class="card-info">
+                        March 1 | 7:30pm | SB015
+                    </div>
+                    <div class="card-body">
+                        Come out and see the projects made and being made by Hoosier Games
+                        members during the first half of the semester! Production Teams will
+                        be showcasing their progress along their semester long journey to a
+                        full game product, and Specialist Teams will be presenting the results
+                        of their four-week projects.
+                    </div>
+                </div>
+                <!--Event Start-->
+                <div class="card">
+                    <div class="card-title">
+                        Second Four-Week Pitches
+                    </div>
+                    <div class="card-info">
+                        March 8 | 7:30pm | SB015
+                    </div>
+                    <div class="card-body">
+                        Come here the ideas for the second round of portfolio-building-focused
+                        4-week projects! These projects are open to anyone that wants to get a bit
+                        more experience working in their field of choice and are great for building
+                        up a strong collection of showcase-ready material!
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-column" style="display: none;" id="MoreEvents">
+                <!--Event Start-->
+                <div class="card">
+                    <div class="card-title">
+                        GDC Week Game Night
+                    </div>
+                    <div class="card-info">
+                        March 22 | 7:30pm | SB015
+                    </div>
+                    <div class="card-body">
+                        With video games, board games, card games, and more, come out to a
+                        Hoosier Games Game Night to hang out with other members and
+                        have some free food and drinks. The space is open to all, so feel
+                        free to bring some friends!
+                    </div>
+                </div>
+                <!--Event Start-->
+                <div class="card">
+                    <div class="card-title">
+                        Final Presentations
+                    </div>
+                    <div class="card-info">
+                        April 26 | 7:30pm | SB015
+                    </div>
+                    <div class="card-body">
+                        The last event of the semester, teams will be showing off their final
+                        products be it a game, collection of art pieces, soundtrack, or design
+                        prototype. Be sure to come out and see what everyone's been up to,
+                        talk with groups about their projects, and see what's in store for
+                        the future of Hoosier Games.
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="ToggleExpand" class="expand-toggle hidden" />
+            <label for="ToggleExpand" class="expand-button" onclick="toggleMoreEvents()"><span class="cross"></span></label>
+        </div>
+        <div class="title">
+            <div class="text no-select">Calendar</div>
+        </div>
+        <iframe class="card single" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=1hu658mpvos2qa3ur8qahhi5bg%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=America%2FNew_York" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="bottom">
+        <!-- Website by Rajin Shankar, 2018 -->
+    </div>
+</body>
+</html>
